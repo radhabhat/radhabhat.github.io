@@ -108,7 +108,7 @@
 
             <div id="trio2">
                 <div class="inner">
-                    <h4>Open Positions</h4>
+                    <h4><span class="blink_me">Open Position</span></h4>
                     <a href="#"><span></span></a><br>
 		    <a href="#"><span></span></a>
                 </div>
@@ -153,7 +153,11 @@
         $(window).load(function() {
             $('#slider').nivoSlider();
         });
-    </script>
+    <script type="text/javascript">
+	(function blink() {
+  	$('.blink_me').fadeOut(500).fadeIn(500, blink);
+	})();
+	</script>
 </body>
 
 </html>
