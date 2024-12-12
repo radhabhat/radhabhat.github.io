@@ -11,6 +11,21 @@
     <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
     <title>Radhakrishna Bhat</title>
+    <style>
+	#blink {
+  	width: 50px;
+  	height: 50px;
+  	background-color: red;
+  	border-radius: 100px;
+  	margin: 20px;
+  	animation-name: blink;
+  	animation-duration: 0.5s;
+  	animation-iteration-count: infinite;
+	}
+	@keyframes blink {
+ 		 50% {opacity: 0;}
+	}
+    </style>
 </head>
 
 <body>
@@ -109,8 +124,9 @@
             <div id="trio2">
                 <div class="inner">
                     <h4><span class="blink_me">Open Position</span></h4>
-                    <a href="#"><span></span></a><br>
-		    <a href="#"><span></span></a>
+                    <div id="blink">
+			    Here
+		    </div>
                 </div>
             </div>
 
